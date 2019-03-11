@@ -5,7 +5,7 @@ import time
 import serial
 # Configurations
 ping_server = 30
-jenkins_jobs=["Myproject1"] 
+jenkins_jobs=["Myproject1"]
 ser = serial.Serial('COM4', 9600) 
 # Arduino Configuration
 SUCCESS = 'b'
@@ -14,7 +14,7 @@ BUILDING = 'a'
 UNSTABLE = 'y'
 time.sleep(5)
 def get_status(jobName):
-    jenkinsUrl = "http://localhost:8080/"
+    jenkinsUrl = "http://localhost:8080/job/"
     try:
         jenkinsStream   = urllib2.urlopen( jenkinsUrl + jobName + "/lastBuild/api/json" )
     except urllib2.HTTPError, e:
