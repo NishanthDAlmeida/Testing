@@ -14,7 +14,7 @@ BUILDING = 'a'
 UNSTABLE = 'y'
 time.sleep(5)
 def get_status(jobName):
-    jenkinsUrl = "http://localhost:8080/job/Myproject1/"
+    jenkinsUrl = "http://localhost:8080/"
     try:
         jenkinsStream   = urllib2.urlopen( jenkinsUrl + jobName + "/lastBuild/api/json" )
     except urllib2.HTTPError, e:
