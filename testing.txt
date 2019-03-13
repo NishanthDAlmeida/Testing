@@ -1,0 +1,8 @@
+pipeline {
+    agent any
+       stage('Switching on LED') {
+               steps { 
+                    sh 'Test1.py'
+                     }
+                 }
+           ]
