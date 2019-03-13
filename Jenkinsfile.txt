@@ -3,7 +3,7 @@ pipeline {
      stages {  
      stage('Switching on LED') {
                steps { 
-                    sh 'python test1.py'
+                    sh 'python -u test1.py'
                      }
                  }
            }
