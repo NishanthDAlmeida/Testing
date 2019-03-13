@@ -1,8 +1,10 @@
 pipeline {
-    agent any
-       stage('Switching on LED') {
+    agent { docker { image 'python:2.7.16'}}
+     stages {  
+     stage('Switching on LED') {
                steps { 
-                    echo "Hello"
+                    sh 'python Test1.py'
                      }
                  }
            }
+   }
