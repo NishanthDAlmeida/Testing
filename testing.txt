@@ -2,7 +2,7 @@ pipeline {
     agent any
        stage('Switching on LED') {
                steps { 
-                    sh 'python -u Test1.py'
+                    echo "Hello"
                      }
                  }
            ]
