@@ -1,9 +1,9 @@
 pipeline {
-    agent any
+    agent { image 'python:2.7.16' } }
      stages {  
      stage('Switching on LED') {
                steps { 
-                    echo 'Hello'
+                    sh 'python test1.py'
                      }
                  }
            }
