@@ -3,7 +3,7 @@ pipeline {
      stages {  
      stage('Switching on LED') {
                steps { 
-                    bat 'python.exe Test1.py' 
+                    bat 'python Test1.py' 
                      }
                  }
            }
